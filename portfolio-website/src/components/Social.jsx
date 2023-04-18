@@ -1,4 +1,5 @@
 import React from 'react';
+import '../assets/css/styles.css'
 import linkedinIcon from '../assets/img/linkedin.png';
 import facebookIcon from '../assets/img/facebook.png';
 
@@ -17,7 +18,7 @@ const Social = () => {
         </a>
       </div>
       <div className="column is-6 has-text-centered">
-        <a target="_blank" rel="noopener noreferrer" href="">
+        <a target="_blank" rel="noopener noreferrer" href="test">
           <img className="" src={facebookIcon} alt="Facebook" />
         </a>
       </div>

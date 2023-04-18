@@ -3,7 +3,7 @@ import project1Image from '../assets/img/project-1.jpg';
 import project2Image from '../assets/img/project-2.jpg';
 import project3Image from '../assets/img/project-3.jpg';
 import project4Image from '../assets/img/project-4.jpg';
-import '../App.css'
+import '../assets/css/styles.css'
 
 const Projects = () => {
   return (

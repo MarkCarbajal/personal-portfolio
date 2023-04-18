@@ -1,36 +1,35 @@
 import React from 'react';
-import  '../App.css'
-
+import '../assets/css/styles.css';
 
 const Navbar = () => {
   return (
-    <nav className="navcontainer void-background">
-                <div classclassName="nav-left">
-                    <a href="https://github.com/MarkCarbajal" class="nav-item">
-                        <span classclassName="icon">
-                            <i classclassName="fa fa-github"></i>
-                        </span>
-                    </a>
-                    <a href="" classclassName="nav-item">
-                        <span classclassName="icon">
-                            <i classclassName="fa fa-twitter"></i>
-                        </span>
-                    </a>				
-                </div>
+    <nav className="nav container void-background">
+      <div className="nav-left">
+        <a href="https://github.com/MarkCarbajal" className="nav-item">
+          <span className="icon">
+            <i className="fa fa-github"></i>
+          </span>
+        </a>
+        <a href="" className="nav-item">
+          <span className="icon">
+            <i className="fa fa-twitter"></i>
+          </span>
+        </a>				
+      </div>
 
-                <div classclassName="nav-right nav-menu">
-                    <a classclassName="nav-item" href="#about">About</a>
-                    <a classclassName="nav-item" href="#projects">Projects</a>
-                    <a classclassName="nav-item" href="#social">Social</a>
-                </div>
+      <div className="nav-right nav-menu">
+        <a className="nav-item" href="#about">About</a>
+        <a className="nav-item" href="#projects">Projects</a>
+        <a className="nav-item" href="#social">Social</a>
+      </div>
 
-                <span classclassName="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </nav>
-    )
+      <span className="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </nav>
+  )
 }
 
-export default Navbar
+export default Navbar;
