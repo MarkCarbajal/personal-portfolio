@@ -4,6 +4,11 @@ html, body{
 	background-color: #063647; 
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 a {
   color: #00d1b2;
 }
@@ -15,17 +20,22 @@ a:hover {
 section{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+
 }
 
 .section-1 {
 	background: #063647;
+	margin-top: 50px;
 }
 
 .section-2 {
 	background-color: #052D3D;
+	border-radius: 25px;
+	margin: 10px
 }
 
 .section-3 {
+	margin-top: 50px;
 	background-color: #0E282E;
 }
 
@@ -33,6 +43,7 @@ section{
 	background-color: #063647;
 	padding: 0.2rem;
 }
+
 
 a.nav-item {
 	color: #dfdfdf;
@@ -78,9 +89,23 @@ a.nav-item:hover {
 	margin-bottom: 2rem;
 }
 
+.intro-title {
+	font-size: 50px;
+	margin-bottom: 10px;
+	font-weight: 650;
+	color:white;
+}
+
+.intro-title-smaller {
+	font-size: 35px;
+	margin-bottom: 10px;
+	font-weight: 650;
+	margin-top: 20px;
+	color:white;
+}
+
 .intro {
-	text-align: justify;
-	width: 80%;
+	text-align: left;
 	margin: 0 auto;
 }
 
@@ -88,6 +113,42 @@ a.nav-item:hover {
 	background-color: transparent; 
 }
 
+.wrapper {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+.nav {
+	background-color: rgba(255, 255, 255, 0.1); /* White-transparent background */
+	border: 1px solid rgb(70, 70, 70); /* White border */
+	border-radius: 10px; /* Rounded corners */
+	position: fixed; /* Keep navbar fixed on top */
+	top: 0; /* Stick to the top */
+	left: 0; /* Stick to the left */
+	right: 0; /* Stick to the right */
+	z-index: 1000; /* Ensure it stays on top of other elements */
+	backdrop-filter: blur(10px);
+	max-width: 65%;
+	margin-top: 20px;
+  }
+
+
+  .tech-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 10px;
+  }
+  
+  .tech-item {
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.1); /* White-transparent background */
+	border: 1px solid rgb(70, 70, 70); /* White border */
+	border-radius: 25px;
+  }
+  
+  
 @media screen and (max-width: 768px) {
 	.nav-menu {
 		background-color: #063647;
