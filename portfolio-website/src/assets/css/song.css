@@ -1,0 +1,40 @@
+/* Song.module.css */
+.songContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+  }
+  
+  .songContainer p {
+    font-weight: 500;
+  }
+  
+  .songContainer .spotifyIcon {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .songLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #9ca3af;
+  }
+  
+  .songLink:hover {
+    color: #059669;
+    opacity: 0.8;
+  }
+  
+  .songLink .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .songLink .underline {
+    text-decoration: underline;
+  }
+  

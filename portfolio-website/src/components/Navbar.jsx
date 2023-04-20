@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/styles.css';
+import Song from './Song';
 
 const Navbar = () => {
   return (
@@ -10,13 +11,13 @@ const Navbar = () => {
             <i className="fa fa-github"></i>
           </span>
         </a>
-        <a href="" className="nav-item">
+        <a href="https://www.linkedin.com/in/markcarbajal024/" className="nav-item">
           <span className="icon">
-            <i className="fa fa-twitter"></i>
+            <i className="fa fa-linkedin"></i>
           </span>
         </a>				
       </div>
-
+      <Song/>
       <div className="nav-right nav-menu">
         <a className="nav-item" href="#about">About</a>
         <a className="nav-item" href="#projects">Projects</a>
