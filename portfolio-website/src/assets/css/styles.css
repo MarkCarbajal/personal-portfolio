@@ -1,7 +1,7 @@
 html, body{
 	font-size:16px;
 	color: #dfdfdf;
-	background-color: #063647; 
+	background-color: #0f172a; 
 }
 
 body {
@@ -24,7 +24,7 @@ section{
 }
 
 .section-1 {
-	background: #063647;
+	background: #0f172a;
 	margin-top: 50px;
 }
 
@@ -80,11 +80,11 @@ a.nav-item:hover {
 
 .box {
 	background-color: transparent;
-	border: 2px solid rgba(7, 59, 79, 0.5);
+	border: 2px solid rgba(15,23,42,255);
 }
 
 .title {
-	color: #fff;
+	color: #cfd1d4;
 	text-align: left;
 	margin-bottom: 2rem;
 }
@@ -93,7 +93,7 @@ a.nav-item:hover {
 	font-size: 50px;
 	margin-bottom: 10px;
 	font-weight: 650;
-	color:white;
+	color:#cfd1d4;
 }
 
 .intro-title-smaller {
@@ -101,7 +101,7 @@ a.nav-item:hover {
 	margin-bottom: 10px;
 	font-weight: 650;
 	margin-top: 20px;
-	color:white;
+	color:#cfd1d4;
 }
 
 .intro {
@@ -173,6 +173,85 @@ a.nav-item:hover {
 	opacity: 1;
 	transform: scale(1) translate(-50%, -50%);
   }
+
+  /*  Projects css */
+
+  .projects-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	padding: 20px;
+  }
+  
+  .project {
+	background-color: #1b2637;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add transition property */
+  }
+
+  .project:hover {
+	background-color: #313848;
+  }
+  
+  .project-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+  }
+  
+  .project-title {
+	margin: 0;
+	font-size: 18px;
+  }
+  
+  .project-description {
+	text-align: center;
+	margin: 10px 0;
+  }
+  
+  .project-stats {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+
+/* Overlapping Title Effect */
+.title-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.background-title {
+	position: absolute;
+	color: #363c4c;
+	font-size: 61px;
+	text-align: center;
+	font-weight: 650;
+	margin-bottom: 20px;
+	z-index: 0;
+	bottom: -10px;
+	left: -15px; /* Adjust the horizontal position */
+  }
+  
+
+.intro-title-smaller {
+	position: relative;
+	font-size: 35px;
+	margin-bottom: 10px;
+	font-weight: 650;
+	margin-top: 20px;
+	color:#cfd1d4;
+	z-index: 1;
+}
+
   
 @media screen and (max-width: 768px) {
 	.nav-menu {

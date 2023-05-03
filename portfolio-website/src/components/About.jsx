@@ -1,6 +1,7 @@
 import React from 'react';
 //import profileImage from '../assets/img/profile.png'
 import '../assets/css/styles.css';
+import Discord from './Discord';
 
 const About = () => {
   return (
@@ -9,15 +10,17 @@ const About = () => {
         <img className="avatar" src={profileImage} alt="Profile" />
         </div>*/
       }
+      <Discord/>
       <div className="container">
         <br />
-        <h1 className='intro-title'>Hello, I'm Mark 👋</h1>
+        <h1 className='intro-title'><span style={{color: "#79879b"}}>Hello,</span> I'm Mark 👋</h1>
         <p className="intro">
         Hello, I'm currently a 21 year old student enrolled at California State University Fullerton. 
         I am in my 4th year of university, pursuing a Bachelors in Science in Computer Science with an 
         expected graduation date of Dec 2023.
         </p>
         <h1 className='intro-title-smaller'> About Me 💭</h1>
+        
         <p className='intro'>
          I've always been quite passionate about technology, for me what really sparked my interest was
          video games at a young age. I am currently an aspiring software, currently focused on gaining more experience building

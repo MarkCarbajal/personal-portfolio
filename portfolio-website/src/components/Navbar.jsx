@@ -17,7 +17,7 @@ const Navbar = () => {
           </span>
         </a>				
       </div>
-      <Song/>
+      
       <div className="nav-right nav-menu">
         <a className="nav-item" href="#about">About</a>
         <a className="nav-item" href="#projects">Projects</a>

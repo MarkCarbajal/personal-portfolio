@@ -6,6 +6,7 @@ import Social from './components/Social';
 import Footer from './components/Footer';
 import TechGrid from './components/TechGrid';
 import Song from './components/Song';
+import Discord from './components/Discord';
 
 function App() {
   return (
