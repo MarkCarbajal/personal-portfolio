@@ -4,7 +4,7 @@ import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { useLanyardWS } from 'use-lanyard';
 
 const Song = () => {
-  const discordUserId = '<YOUR_DISCORD_USER_ID>'; // Replace with the Discord user's ID
+  const discordUserId = '303852465248534532'; 
   const lanyardData = useLanyardWS(discordUserId);
 
   const getSpotifyInfo = () => {

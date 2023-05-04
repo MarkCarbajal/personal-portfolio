@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: -20px;
   }
   
   .avatar-container {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   
   .avatar {
@@ -19,12 +20,12 @@
   
   .status-light {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    bottom: -2px;
+    right: -2px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #0f172a;
   }
   
   .status-light.online {
@@ -33,6 +34,14 @@
   
   .status-light.offline {
     background-color: #747f8d;
+  }
+
+  .status-light.busy {
+    background-color: #f04747;
+  }
+
+  .status-light.away {
+    background-color: #faa61a;
   }
   
   .discord-info {
@@ -43,8 +52,12 @@
   .discord-username {
     margin: 0;
     font-size: 18px;
+    color: #b6b8bf;
   }
   
   .discord-discriminator {
-    font-size: 14px;
+    font-size: x-small;
+    font-weight: 500;
+    color: #848690;
+    margin-top: -5px;
   }

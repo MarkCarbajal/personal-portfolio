@@ -3,9 +3,17 @@ import '../assets/css/styles.css'
 
 const Footer = () => {
   return (
-    <section className="section-4 has-text-centered container">
-    <a href="">Mark Carbajal : MarkCarbajal9090@gmail.com</a>
-    </section>
+    <div>
+      <div className="footer-container">
+        <div className="line" />
+        <span className="text">MARKCARB</span>
+        <div className="line" />
+      </div>
+      <div className="sub-footer-container">
+        <span>© 2023 markcarb.dev</span>
+        <span style={{ color: '#767984' }}>Made by <span style={{ color: '#bfc2c7', cursor: 'pointer' }}>Mark</span></span>
+      </div>
+    </div>
   )
 }
 

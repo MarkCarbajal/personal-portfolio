@@ -13,10 +13,8 @@ function App() {
     <div className='wrapper'>
       <Navbar/>
       <About/>
-      <Song/>
       <TechGrid/>
       <Projects/>
-      <Social/>
       <Footer/>
       
     </div>

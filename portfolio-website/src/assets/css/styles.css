@@ -240,7 +240,40 @@ a.nav-item:hover {
 	bottom: -10px;
 	left: -15px; /* Adjust the horizontal position */
   }
+
+  /* Footer */
+
+  .footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 5px;
+  }
   
+  .line {
+	flex-grow: 1;
+	border-bottom: 1px solid #2a3041;
+	margin: 0 15px;
+  }
+  
+  .text {
+	white-space: nowrap;
+	color: #79879b;
+	font-size: 35px;
+	font-weight: 650;
+  }
+  
+  .sub-footer-container {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right:20px;
+	color: #8c929b;
+	margin-bottom: 75px;
+  }
+  /*       =-------------------=                 */
 
 .intro-title-smaller {
 	position: relative;
