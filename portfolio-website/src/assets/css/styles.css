@@ -138,6 +138,7 @@ a.nav-item:hover {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	grid-gap: 10px;
+	padding-top: 25px;
   }
   
   .tech-item {

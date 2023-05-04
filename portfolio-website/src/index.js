@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 //import 'bulma/css/bulma.min.css';
 //import '@fortawesome/fontawesome-free/css/all.min.css';
 import './assets/css/styles.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
     <App />
   </React.StrictMode>
 );

@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../assets/css/styles.css';
-import Song from './Song';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <nav className="nav container void-background">
+    <nav className="nav container void-background" data-aos="fade-down">
       <div className="nav-left">
         <a href="https://github.com/MarkCarbajal" className="nav-item">
           <span className="icon">
@@ -15,9 +23,9 @@ const Navbar = () => {
           <span className="icon">
             <i className="fa fa-linkedin"></i>
           </span>
-        </a>				
+        </a>
       </div>
-      
+
       <div className="nav-right nav-menu">
         <a className="nav-item" href="#about">About</a>
         <a className="nav-item" href="#projects">Projects</a>
@@ -30,7 +38,7 @@ const Navbar = () => {
         <span></span>
       </span>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;

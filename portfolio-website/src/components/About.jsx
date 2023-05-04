@@ -1,11 +1,20 @@
-import React from 'react';
-//import profileImage from '../assets/img/profile.png'
+import React, { useEffect } from 'react';
 import '../assets/css/styles.css';
 import Discord from './Discord';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import TechGrid from './TechGrid';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <section id="about" className="section section-1">
+    <section id="about" className="section section-1" data-aos="fade-left">
       {/*<div className="container has-text-centered">
         <img className="avatar" src={profileImage} alt="Profile" />
         </div>*/
@@ -38,7 +47,9 @@ const About = () => {
         use currently.
         </p>
       </div>
+      <TechGrid/>
     </section>
+
   );
 };
 
