@@ -180,7 +180,7 @@ a.nav-item:hover {
   .projects-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px;
+	grid-gap: 7.5px;
 	padding: 20px;
   }
   
