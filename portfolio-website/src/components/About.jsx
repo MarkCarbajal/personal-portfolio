@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../assets/css/styles.css';
-import Discord from './Discord';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Discord from '../utils/Discord';
 import TechGrid from './TechGrid';
+import useAOS from '../utils/useAOS';
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-    AOS.refresh();
-  }, []);
+useAOS();
 
   return (
     <section id="about" className="section section-1" data-aos="fade-left">
