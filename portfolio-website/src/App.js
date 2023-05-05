@@ -1,21 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Outlet, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import About from './components/About';
-import Social from './components/Social';
 import Footer from './components/Footer';
-import TechGrid from './components/TechGrid';
-import Song from './components/Song';
-import Discord from './components/Discord';
+import Home from './pages/Home';
+import ContactMe from './pages/ContactMe';
+
 
 function App() {
   return (
-    <div className='wrapper'>
-      <Navbar/>
-      <About/>
-      <Projects/>
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact-me" element={<ContactMe />} />
+      </Routes>
+    </Router>
   );
 }
 

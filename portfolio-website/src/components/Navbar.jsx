@@ -1,15 +1,12 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Link, Outlet, Routes } from 'react-router-dom';
 import '../assets/css/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import useAOS from '../utils/useAOS';
 
 const Navbar = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-    AOS.refresh();
-  }, []);
+useAOS();
 
   return (
     <nav className="nav container void-background" data-aos="fade-down">
@@ -27,9 +24,8 @@ const Navbar = () => {
       </div>
 
       <div className="nav-right nav-menu">
-        <a className="nav-item" href="#about">About</a>
-        <a className="nav-item" href="#projects">Projects</a>
-        <a className="nav-item" href="#social">Social</a>
+        <Link to="/" className="nav-item">Home</Link>
+        <Link to="/contact-me" className="nav-item">Contact Me</Link>
       </div>
 
       <span className="nav-toggle">

@@ -181,7 +181,11 @@ a.nav-item:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 7.5px;
-	padding: 20px;
+	padding: 5px;
+  }
+
+  .fix-div-aos-pos {
+	margin-top: -100px;
   }
   
   .project {
@@ -286,6 +290,15 @@ a.nav-item:hover {
 	z-index: 1;
 }
 
+/* NAV  */
+
+.nav-right {
+	padding-right: 15px;
+}
+
+.nav-item {
+	margin-right: 10px;
+}
   
 @media screen and (max-width: 768px) {
 	.nav-menu {

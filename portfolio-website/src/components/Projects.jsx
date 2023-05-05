@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowUpRightFromSquare,
@@ -7,8 +7,11 @@ import {
   faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons';
 import '../assets/css/styles.css';
+import useAOS from '../utils/useAOS';
 
 const Projects = () => {
+  useAOS();
+
   const repositories = [
     {
       title: 'Repo 1',
@@ -26,9 +29,8 @@ const Projects = () => {
   ];
 
   return (
-    
-    <div>
-       <div className="title-container">
+    <div className="fix-div-aos-pos" data-aos="fade-left">
+      <div className="title-container">
         <h1 className="background-title">Projects</h1>
         <h1 className="intro-title-smaller">Projects</h1>
       </div>
