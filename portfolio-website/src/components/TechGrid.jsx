@@ -1,8 +1,7 @@
-import React, {useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPython, faJs, faReact, faNodeJs, faFantasyFlightGames, faDev, faConnectdevelop, faHtml5, faCss3Alt, faDocker, faGitAlt, faJava } from '@fortawesome/free-brands-svg-icons';
 import '../assets/css/styles.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
