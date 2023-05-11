@@ -14,16 +14,24 @@ const Projects = () => {
 
   const repositories = [
     {
-      title: 'Repo 1',
-      description: 'This is a description for Repo 1',
+      title: 'Personal Portfolio',
+      description: 'This is my personal portfolio created with ReactJS, and deployed with Vercel.',
+      url: 'https://github.com/MarkCarbajal/personal-portfolio',
     },
     {
-      title: 'Repo 2',
-      description: 'This is a description for Repo 2',
+      title: 'Worlde Rest API',
+      description: 'Wordle Rest API made with python, using Flask, Redis, Sqlite3, Nginx. ',
+      url: 'https://github.com/MarkCarbajal/CPSC449-Project-4',
     },
     {
-      title: 'Repo 2',
-      description: 'This is a description for Repo 2',
+      title: 'Anime Bot',
+      description: 'Created a discord anime bot using SQL and python to diplay queried animes',
+      url: 'https://example.com/anime-bot',
+    },
+    {
+      title: 'Space Invaders',
+      description: 'Created a space invaders clone with custom sprites and sound effects. Developed with pygame',
+      url: 'https://github.com/MarkCarbajal/SpaceInvaders',
     },
     // Add more repositories as needed
   ];
@@ -37,18 +45,20 @@ const Projects = () => {
 
       <div className="projects-container">
         {repositories.map((repo, index) => (
-          <div key={index} className="project">
-            <div className="project-header">
-              <h3 className="project-title">{repo.title}</h3>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          <a key={index} href={repo.url} target="_blank" rel="noopener noreferrer" className="project-link">
+            <div className="project">
+              <div className="project-header">
+                <h3 className="project-title">{repo.title}</h3>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </div>
+              <p className="project-description">{repo.description}</p>
+              <div className="project-stats">
+                <FontAwesomeIcon icon={faCode}/> 
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faCodeBranch} />
+              </div>
             </div>
-            <p className="project-description">{repo.description}</p>
-            <div className="project-stats">
-              <FontAwesomeIcon icon={faCode} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faCodeBranch} />
-            </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
