@@ -318,3 +318,14 @@ a.nav-item:hover {
 	}
 
 }
+
+.project-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+  }
+  
+  .project-link:hover .project {
+	background-color: #313848;
+	color: #cfd1d4;
+  }
