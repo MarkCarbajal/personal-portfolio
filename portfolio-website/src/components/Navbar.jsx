@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Link, Outlet, Routes } from 'react-router-dom';
 import '../assets/css/styles.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import useAOS from '../utils/useAOS';
 
